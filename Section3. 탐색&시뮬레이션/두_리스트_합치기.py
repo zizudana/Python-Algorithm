@@ -11,3 +11,7 @@ result.sort()
 
 for i in result:
     print(i, end=" ")
+
+'''
+이미 정렬된 자료이므로 O(n)으로 정렬할 수 있다.
+'''
