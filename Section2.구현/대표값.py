@@ -15,3 +15,26 @@ for i in range(n):
         min_dif = dif
         before_score = score[i]
 print(score_avg, answer+1)
+
+'''
+소수 첫째 자리에서 반올림
+파이썬의 round는 round_half_even방식을 택한다.
+->4.5000의 경우 5가 아닌 짝수 4로 반올림한다.
+round_half_up 계산법
+a = 4.5
+a = int(a+0.5)
+'''
+
+'''
+min = -2147000000
+for idx, x in enumerate(a):
+    tmp = abs(x-ave)
+    if tmp < min:
+        min = tmp
+        score = x
+        res = idx+1
+    elif tmp==min:
+        if x>score:
+            score=x
+            res=idx+1
+'''
