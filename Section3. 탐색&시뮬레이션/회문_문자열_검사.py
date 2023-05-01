@@ -17,3 +17,7 @@ for word in words:
         print("YES")
     else:
         print("NO")
+
+'''
+if s==s[::-1]로 간단하게 검사 가능
+'''
