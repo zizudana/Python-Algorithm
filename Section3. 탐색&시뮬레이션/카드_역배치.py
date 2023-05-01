@@ -12,3 +12,10 @@ for _ in range(10):
     card = card[:a-1] + new_card[::-1] + card[b:]
 
 print(card)
+
+'''
+swap으로 뒤집을 수 있다.
+a, b = b, a
+
+a=list(range(21))
+'''
