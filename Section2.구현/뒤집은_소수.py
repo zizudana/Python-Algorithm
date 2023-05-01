@@ -3,6 +3,8 @@ def reverse(x): # 뒤집는 함수
     return int(x[::-1])
 
 def isPrime(x): # 소수판별함수
+    if x==1:
+        return False
     flag = 1
     for i in range(2, x//2+1):
         if x % i == 0:
@@ -18,4 +20,13 @@ nums = list(map(str, input().split()))
 for num in nums:
     if isPrime(reverse(num)):
         print(reverse(num), end=" ")
-    
+        
+'''
+def reverse(x):
+    res = 0
+    while x>0:
+        t=x%10
+        res = res*10+t
+        x=x//10
+    return res
+'''
