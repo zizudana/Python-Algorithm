@@ -16,3 +16,17 @@ for i in range(n):
         break
 print(nums[i])
 
+'''
+각 자릿수의 합 구하기
+def digit_sum(x):
+    sum = 0
+    정수처리
+    while x>0:
+        sum += x%10
+        x = x//10
+    return sum
+    
+    문자열취급
+    for i in str(x):
+        sum += int(i)        
+'''
