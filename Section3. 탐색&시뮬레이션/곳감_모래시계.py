@@ -15,10 +15,20 @@ for _ in range(m):
         board[a-1] = board[a-1][m%n:] + board[a-1][:m%n]
     else:
         board[a-1] = board[a-1][-m%n-1:] + board[a-1][:-m%n-1]
-        
+
 mid = n//2
 board_sum = board[mid][mid]
 for i in range(mid):
     board_sum += sum(board[i][i:n-i])
     board_sum += sum(board[-i-1][i:n-i])
 print(board_sum)
+
+'''
+이차원 리스트 만들기
+a = [list(map(int, input().split())) for _ in range(n)]
+
+왼쪽 회전
+a[h-1].append(a[h-1].pop(0))
+오른쪽 회전
+a[h-1].insert(0, a[h-1].pop())
+'''
