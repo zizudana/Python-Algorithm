@@ -17,3 +17,8 @@ for i in range(1, num//2+1):
     if num % i == 0:
         cnt += 1
 print(cnt)
+
+'''
+if x.isdecimal(): 0부터 9까지의 숫자면 1
+    res = res*10 + int(x)
+'''
