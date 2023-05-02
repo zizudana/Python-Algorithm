@@ -20,3 +20,9 @@ if(flag):
     print("YES")
 else:
     print("NO")
+
+'''
+행, 열, 그룹 3번 검사해야 한다
+
+ch3[a[i*3+k][j*3+s]] = 1
+'''
