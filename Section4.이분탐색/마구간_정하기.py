@@ -14,3 +14,9 @@ for case in cases:
         min_dif = min(min_dif, case[i+1]-case[i])
     max_dif = max(max_dif, min_dif)
 print(max_dif)
+
+'''
+결정알고리즘
+1~9 사이 5가 되는지 확인
+1~4 사이 2가 되는지 확인
+'''
