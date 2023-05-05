@@ -19,3 +19,7 @@ while(s <= e):
         s = mid+1
     else:
         e = mid-1
+
+'''
+mid = (s+e)//2
+'''
