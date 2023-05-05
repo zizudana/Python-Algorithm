@@ -17,3 +17,8 @@ for i in range(1, n):
         cnt += 1
         end = times[i][1]
 print(cnt)
+
+'''
+그리디는 정렬과 동반된다
+key=lambda x: (x[1],x[0])
+'''
