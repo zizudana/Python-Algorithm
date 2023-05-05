@@ -14,3 +14,11 @@ while True:
     if(len(weights) == 1 or len(weights) == 0):
         break
 print(cnt)
+
+'''
+deque 사용
+from collections import deque
+p = deque(p)
+p.popleft()
+p.pop()
+'''
