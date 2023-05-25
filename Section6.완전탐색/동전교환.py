@@ -22,7 +22,7 @@ def dfs(L, sum):
     global res
     if sum == m and L<res:
         res=L
-    if sum > m:
+    if sum > m or L>res:
         return
     else:
         for coin in coins:
