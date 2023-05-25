@@ -5,6 +5,7 @@ sys.stdin=open("input.txt", "rt")
 n = int(input())
 coins= list(map(int, input().split()))
 m = int(input())
+'''
 cnt= 0
 coins.sort(reverse=True)
 for coin in coins:
@@ -14,4 +15,18 @@ for coin in coins:
     else:
         break
 print(cnt)
+'''
+res = int(sys.maxsize)
+# DFS로 풀이
+def dfs(L, sum):
+    global res
+    if sum == m and L<res:
+        res=L
+    if sum > m:
+        return
+    else:
+        for coin in coins:
+            dfs(L+1, sum+coin)
 
+dfs(0, 0)
+print(res)
